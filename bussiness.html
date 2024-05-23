@@ -109,16 +109,56 @@
             margin: 0.5em 0;
         }
 
-       
-        
-        
-        
-
         footer {
             background-color: #333;
             color: white;
             padding: 1em 0;
             text-align: center;
+        }
+
+        .contact {
+            background-color: #f4f4f4;
+            padding: 3em 0;
+            text-align: center;
+        }
+
+        .contact form {
+            background: white;
+            padding: 2em;
+            margin: 2em auto;
+            max-width: 500px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+
+        .contact form div {
+            margin-bottom: 1em;
+        }
+
+        .contact form label {
+            display: block;
+            margin-bottom: 0.5em;
+        }
+
+        .contact form input,
+        .contact form textarea {
+            width: 100%;
+            padding: 0.5em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 0.75em 1.5em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact form button:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
@@ -164,7 +204,26 @@
             </div>
         </div>
     </section>
-   
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
     <footer>
         <div class="container">
             <p>&copy; 2024 My Business</p>
